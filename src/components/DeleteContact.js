@@ -13,7 +13,7 @@ const DeleteContact = (props) => {
     return(
         <div className="main">
             <div className="ui center aligned container">
-               <h2>Are You Sure Want to Delete {name}'s' Contacts Details</h2>                
+               <h2>Are You Sure Want to Delete {name}'s Contacts Details</h2>                
                     <Link to="/">
                       <div className="ui buttons">
  

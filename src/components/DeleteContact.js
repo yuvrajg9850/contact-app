@@ -4,24 +4,27 @@ import ContactCard from './ContactCard';
 
 const DeleteContact = (props) => {
     const location = useLocation();
-    const {id ,name, email} = location.state.contact;    
-   
+    const {id ,name, email} = location.state.contact;  
+
+    const deleteContactHandler = () => {
+        props.getContactId(id);
+    }
         
     return(
         <div className="main">
             <div className="ui center aligned container">
-               <h2>Are You Sure Want to Delete {name}'s' Contacts Details</h2>
-                
-                <div class="ui buttons">
-                <Link to="/">
-                    <button class="ui red button">No</button>
-                </Link>
-                    <div class="or"></div>
-                    <button class="ui positive button"  
-                    >Yes</button>
-                    </div>
-                   </div>
-        </div>
+               <h2>Are You Sure Want to Delete {name}'s' Contacts Details</h2>                
+                    <Link to="/">
+                      <div className="ui buttons">
+ 
+                        <button className="ui negative button">No</button>                    
+                        <div class="or"></div>
+                        <button className="ui positive button" onClick={deleteContactHandler}>Yes</button>
+                        </div>
+
+                    </Link>
+                </div>
+            </div>
     )
 }
 

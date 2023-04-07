@@ -46,7 +46,7 @@ render(){
 
              </form>
              <Link to="/">
-             <button className="ui button blue left floated" style={{marginTop: "3px"}}> Contact List</button>             
+             <button className="ui button blue left floated" style={{marginTop: "3px"}}>Back</button>             
              </Link>
 
         </div>

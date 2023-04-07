@@ -20,7 +20,7 @@ const ContactList = (props) => {
         <div class="main">
             <h2>Contact List 
              <Link to="/add">
-                <button className="ui button blue right floated" >Add Contact</button>
+                <button className="ui button blue right floated" shadowSize={2} >Add Contact</button>
             </Link>
             </h2>  
 

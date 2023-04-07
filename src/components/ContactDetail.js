@@ -5,7 +5,7 @@ import user from "../images/user.jpg";
 
 const ContactDetail = () => {
     const location = useLocation();
-    const {id, name, email} = location.state.contact;
+    const {name, email} = location.state.contact;
     return (
         <div className="main">
             <div className="ui card centered">

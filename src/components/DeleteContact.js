@@ -2,12 +2,11 @@ import React from "react";
 import { useLocation, Link } from "react-router-dom";
 import ContactCard from './ContactCard';
 
-
-
 const DeleteContact = (props) => {
     const location = useLocation();
-    const {id, name, email} = location.state.contact;
-
+    const {id ,name, email} = location.state.contact;    
+   
+        
     return(
         <div className="main">
             <div className="ui center aligned container">
@@ -19,10 +18,9 @@ const DeleteContact = (props) => {
                 </Link>
                     <div class="or"></div>
                     <button class="ui positive button"  
-                     onClick={ () => props.clickHandler(id)}
                     >Yes</button>
                     </div>
-            </div>
+                   </div>
         </div>
     )
 }

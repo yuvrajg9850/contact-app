@@ -20,6 +20,7 @@ function App() {
     const newContactList = contacts.filter((contact) => {
       return contact.id !== id;
     })
+    if(newContactList.length === 0) localStorage.clear();
     setContacts(newContactList);
   }
 

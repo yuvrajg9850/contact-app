@@ -1,3 +1,4 @@
+React based appliaction for managing contacts.
 For live demo
 Visit: https://yuvrajg9850.github.io/contact-app
 
